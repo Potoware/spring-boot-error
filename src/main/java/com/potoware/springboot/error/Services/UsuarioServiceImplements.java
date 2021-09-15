@@ -2,6 +2,7 @@ package com.potoware.springboot.error.Services;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
@@ -11,6 +12,8 @@ import com.potoware.springboot.error.models.domain.Usuario;
 public class UsuarioServiceImplements implements UsuarioService {
 	
 	private List<Usuario> lista;
+	
+	
 	
 	
 	public UsuarioServiceImplements() {
@@ -41,6 +44,13 @@ public class UsuarioServiceImplements implements UsuarioService {
 			}
 		}
 		return resultado;
+	}
+
+	@Override
+	public Optional<Usuario> obtenerPorIdOptional(Integer id) {
+		Usuario usuario =obtenerPorId(id);
+		
+		return Optional.ofNullable(usuario);
 	}
 
 }
