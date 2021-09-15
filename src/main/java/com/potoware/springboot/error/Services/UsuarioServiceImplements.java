@@ -16,12 +16,12 @@ public class UsuarioServiceImplements implements UsuarioService {
 	public UsuarioServiceImplements() {
 	this.lista = new ArrayList<>();
 	this.lista.add(new Usuario(1,"Alejandro" , "Potosi"));
-	this.lista.add(new Usuario(1,"Ordnajela" , "Isotop"));
-	this.lista.add(new Usuario(1,"Muñeca" , "Negra"));
-	this.lista.add(new Usuario(1,"Luci" , "Iluc"));
-	this.lista.add(new Usuario(1,"Rocky" , "Sucio"));
-	this.lista.add(new Usuario(1,"Roger" , "Regor"));
-	this.lista.add(new Usuario(1,"Mono" , "Onom"));
+	this.lista.add(new Usuario(2,"Ordnajela" , "Isotop"));
+	this.lista.add(new Usuario(3,"Muñeca" , "Negra"));
+	this.lista.add(new Usuario(4,"Luci" , "Iluc"));
+	this.lista.add(new Usuario(5,"Rocky" , "Sucio"));
+	this.lista.add(new Usuario(6,"Roger" , "Regor"));
+	this.lista.add(new Usuario(7,"Mono" , "Onom"));
 	}
 
 	@Override
